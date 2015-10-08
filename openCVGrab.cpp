@@ -1,4 +1,3 @@
-// Grab.cpp
 /*
    This sample illustrates how to grab and process images using the CInstantCamera class.
    The images are grabbed and processed asynchronously, i.e.,
