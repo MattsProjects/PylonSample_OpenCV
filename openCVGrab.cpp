@@ -1,15 +1,22 @@
-/*
-   This sample illustrates how to grab and process images using the CInstantCamera class.
-   The images are grabbed and processed asynchronously, i.e.,
-   while the application is processing a buffer, the acquisition of the next buffer is done
-   in parallel.
+/* openCVGrab: A sample program showing to convert Pylon images to opencv MAT.
 
-   The CInstantCamera class uses a pool of buffers to retrieve image data
-   from the camera device. Once a buffer is filled and ready,
-   the buffer can be retrieved from the camera object for processing. The buffer
-   and additional image data are collected in a grab result. The grab result is
-   held by a smart pointer after retrieval. The buffer is automatically reused
-   when explicitly released or when the smart pointer object is destroyed.
+	Copyright 2017 Matthew Breit <matt.breit@gmail.com>
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+
+	THIS SOFTWARE REQUIRES ADDITIONAL SOFTWARE (IE: LIBRARIES) IN ORDER TO COMPILE
+	INTO BINARY FORM AND TO FUNCTION IN BINARY FORM. ANY SUCH ADDITIONAL SOFTWARE
+	IS OUTSIDE THE SCOPE OF THIS LICENSE.
 */
 // Include files to use OpenCV API.
 #include <opencv2/core/core.hpp>
