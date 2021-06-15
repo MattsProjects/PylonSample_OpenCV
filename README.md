@@ -1,2 +1,2 @@
-# PylonSample_OpenCV_Linux
+# PylonSample_OpenCV
 Sample showing usage of Pylon with OpenCV
